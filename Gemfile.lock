@@ -88,7 +88,7 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.0.5)
     crass (1.0.3)
-    daemons (1.2.3)
+    daemons (1.2.5)
     debug_inspector (0.0.2)
     declarative (0.0.8)
       uber (>= 0.0.15)
@@ -103,7 +103,7 @@ GEM
     email_validator (1.6.0)
       activemodel
     erubis (2.7.0)
-    eventmachine (1.2.0.1)
+    eventmachine (1.2.5)
     execjs (2.7.0)
     ffi (1.9.18)
     file_validators (1.2.0)
@@ -267,7 +267,7 @@ GEM
     therubyracer (0.12.3)
       libv8 (~> 3.16.14.15)
       ref
-    thin (1.7.0)
+    thin (1.7.2)
       daemons (~> 1.0, >= 1.0.9)
       eventmachine (~> 1.0, >= 1.0.4)
       rack (>= 1, < 3)
