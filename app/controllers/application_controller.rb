@@ -14,7 +14,7 @@ class ApplicationController < ActionController::Base
   # end
 
   require_dependency "session/impersonate"
-  before_filter { Session::Impersonate.(params.merge!(tyrant: tyrant)) } # TODO: allow Op.(params, session)
+  before_action { Session::Impersonate.(params.merge!(tyrant: tyrant)) } # TODO: allow Op.(params, session)
 
   rescue_from Trailblazer::NotAuthorizedError, with: :user_not_authorized
 

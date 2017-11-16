@@ -12,8 +12,8 @@ class SessionsController < ApplicationController
     render action: :sign_up_form
   end
 
-  # before_filter should be used when op not involved at all.
-  before_filter( only: [:sign_in_form, :sign_up_form]) { redirect_to root_path if tyrant.signed_in? } # TODO: provide that by Tyrant::Controller.
+  # before_action should be used when op not involved at all.
+  before_action( only: [:sign_in_form, :sign_up_form]) { redirect_to root_path if tyrant.signed_in? } # TODO: provide that by Tyrant::Controller.
   def sign_in_form
     form Session::SignIn
   end
@@ -38,7 +38,7 @@ class SessionsController < ApplicationController
 
   # TODO: should be in one Op.
   # we could also provide 2 different steps: via before filter OR validate token in form?
-  before_filter only: [:wake_up_form] { Session::IsConfirmable.reject(params) { redirect_to( root_path) } }
+  before_action only: [:wake_up_form] { Session::IsConfirmable.reject(params) { redirect_to( root_path) } }
 
   def wake_up_form
     form Session::ChangePassword # TODO: require_original: true
