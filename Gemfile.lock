@@ -56,8 +56,6 @@ GEM
     addressable (2.4.0)
     arel (7.1.4)
     bcrypt (3.1.11)
-    binding_of_caller (0.7.2)
-      debug_inspector (>= 0.0.1)
     builder (3.2.3)
     capybara (2.7.1)
       addressable
@@ -89,7 +87,6 @@ GEM
     concurrent-ruby (1.0.5)
     crass (1.0.3)
     daemons (1.2.5)
-    debug_inspector (0.0.2)
     declarative (0.0.8)
       uber (>= 0.0.15)
     disposable (0.3.2)
@@ -306,7 +303,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  binding_of_caller
   cells (= 4.1.2)
   cells-haml
   cells-rails
