@@ -8,7 +8,7 @@ gem 'jquery-rails'
 gem 'foundation-rails', '< 6.0'
 gem 'haml-rails'
 gem 'simple_form'
-gem 'therubyracer', :platform=>:ruby
+gem 'therubyracer', platform: :ruby
 gem 'thin'
 
 group :development do
